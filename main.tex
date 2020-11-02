@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[pdftex]{graphicx}
+\usepackage{url} 
+\usepackage{svg}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{enumitem}
+    \setlist[itemize]{itemsep=0mm}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{chemfig}
+    \setchemfig{
+        atom sep        = 2em,
+        bond join       = true,
+    }
+\usepackage{chemmacros}
+    \chemsetup{
+        modules = {all},
+    }
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} 
+
+\newcommand{\email}[1]{{\tt#1}}
+\newcommand{\udl}[1]{{\underline{#1}}}
+\newcommand{\bd}[1]{{\textbf{#1}}}
+
+
+
+\begin{document}
+
+
+\input{title}
+\input{abstract}
+
+\pagenumbering{roman}
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic} 
+
+% \input{prob-definition} 
+\input{lecture1} 
+\input{lecture2}
+\input{lecture3} 
+\input{lecture4} 
+\input{lecture5} 
+
+\bibliography{Sample}
+
+\end{document}
